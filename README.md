@@ -1,4 +1,4 @@
-# TKMobile [![Build Status][travis-image]][travis-url] [![NPM version][npm-image]][npm-url]
+# TKMobile
 
 > 
 
