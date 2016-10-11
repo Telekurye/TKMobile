@@ -1,0 +1,18 @@
+<ion-view>
+  <ion-header-bar align-title="left" class="bar-energized">
+    <div class="buttons buttons-left header-item">
+      <span class="left-buttons">
+        <button class="button button-icon button-clear" go-click="/tab/dist">
+          <i class="icon ion-android-arrow-back"></i>
+        </button>
+      </span>
+    </div>
+    <h2 class="title">{{chat.name}}</h2>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
+    <p>
+      {{chat.lastText}}
+    </p>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,20 @@
+{
+  "name": "TKMobile",
+  "version": "1.0.0",
+  "dependencies": {
+    "ionic": "v1.3.1",
+    "ngCordova": "v0.1.27-alpha",
+    "ngstorage": "^0.3.11",
+    "pouchdb": "^6.0.6",
+    "blob-util": "^1.2.1",
+    "ionic-material": "^0.4.2",
+    "robotodraft": "^1.1.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.5.8",
+    "angular-scenario": "~1.5.8"
+  },
+  "resolutions": {
+    "angular": "^1.5.8"
+  }
+}

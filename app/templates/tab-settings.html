@@ -1,0 +1,30 @@
+<ion-view>
+  <ion-header-bar align-title="left" class="bar-energized">
+    <h2 class="title">Ayarlar</h2>
+  </ion-header-bar>
+  <ion-content class="padding">
+
+    <div class="list">
+      <h4 class="font-size-20"> <i class="icon ion-android-settings"></i> Genel </h4>
+      <ion-toggle ng-model="settings.enableWifi">
+        Wifi
+      </ion-toggle>
+      <ion-toggle ng-model="settings.enableWifi">
+        Hücresel Veri
+      </ion-toggle>
+
+      <h4 class="font-size-20"> <i class="icon ion-help-buoy"></i> Yardım </h4>
+      <div class="item item-button-right"> Yöneticiyi Ara
+        <button class="button button-balanced ink" ng-click="callAdmin()">
+          <i class="icon ion-ios-telephone"></i>
+        </button>
+      </div>
+      <div class="item item-button-right"> Acenteyi Ara
+        <button class="button button-balanced ink" ng-click="callAdmin()">
+          <i class="icon ion-ios-telephone"></i>
+        </button>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

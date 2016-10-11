@@ -1,0 +1,37 @@
+<ion-tabs class="tabs-icon-top tabs-energized ">
+
+  <!-- Dashboard Tab -->
+  <ion-tab title="Status" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/dash" class="tab-item">
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Chats Tab -->
+  <ion-tab title="Chats" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/dist" class="tab-item">
+    <ion-nav-view name="tab-dist"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Account Tab -->
+  <ion-tab title="Settings" icon-off="ion-gear-a-outline" icon-on="ion-gear-a" href="#/tab/settings" class="tab-item">
+    <ion-nav-view name="tab-settings"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>
+
+<div class="tabs tabs-striped tabs-color-energized">
+
+  <a class="tab-item {{isActiveDashboard}}" href="#/tab/dash" data-ink-color="#ffc900" data-ink-opacity=".35" ng-click="changeTab('dash')">
+    <i class="icon ion-android-person"></i> Özet
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </a>
+
+  <a class="tab-item {{isActiveHome}}" href="#/tab/dist" data-ink-color="#ffc900" data-ink-opacity=".35" ng-click="changeTab('dist')">
+    <i class="icon ion-home"></i> Anasayfa
+    <ion-nav-view name="tab-dist"></ion-nav-view>
+  </a>
+
+  <a class="tab-item {{isActiveSettings}}" href="#/tab/settings" data-ink-color="#ffc900" data-ink-opacity=".35" ng-click="changeTab('set')">
+    <i class="icon ion-gear-a"></i> Ayarlar
+    <ion-nav-view name="tab-settings"></ion-nav-view>
+  </a>
+
+</div>
