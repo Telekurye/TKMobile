@@ -35,35 +35,35 @@ Overview
 
 Run a local development server with built in filesystem watching support integrated with LiveReload so you can develop your Ionic app in a browser. Since this command uses the `ionic-cli` under the hood, you can specify any command line flags / options shown [here](https://github.com/driftyco/ionic-cli#testing-in-a-browser).
 
-   $ grunt serve --consolelogs
-   $ grunt serve:compress
+    $ grunt serve --consolelogs
+    $ grunt serve:compress
 
 ### `grunt platform:add:<platform>`
 
 Add a supported Cordova platform as a build target for this project.
 
-   $ grunt platform:add:ios
-   $ grunt platform:add:android
+    $ grunt platform:add:ios
+    $ grunt platform:add:android
 
 ### `grunt plugin:add:<plugin>`
 
 Install a native Cordova plugin either by [registry name](http://plugins.cordova.io/) or repository URL.
 
-   $ grunt plugin:add:https://github.com/driftyco/ionic-plugins-keyboard.git
-   $ grunt plugin:add:org.apache.cordova.device
-   $ grunt plugin:add:org.apache.cordova.network-information
+    $ grunt plugin:add:https://github.com/driftyco/ionic-plugins-keyboard.git
+    $ grunt plugin:add:org.apache.cordova.device
+    $ grunt plugin:add:org.apache.cordova.network-information
 
 ### `grunt [emulate|run]:<target>`
 
 Either `emulate` your Ionic app inside a simulator or `run` it on a connected device, optionally enabling LiveReload support to supercharge your development speed and enhance productivity. __Note:__ Any changes to native plugins will still require a full rebuild. This command also uses the `ionic-cli` under the hood, so these [additional flags](https://github.com/driftyco/ionic-cli/blob/master/README.md#live-reload-app-during-development-beta) can be specified.
 
-   $ grunt emulate:ios --livereload
-   $ grunt emulate:ios --lc
-   $ grunt emulate:ios --target=iPad -lc
-   $ grunt emulate:android --consolelogs
+    $ grunt emulate:ios --livereload
+    $ grunt emulate:ios --lc
+    $ grunt emulate:ios --target=iPad -lc
+    $ grunt emulate:android --consolelogs
 
-   $ grunt run:ios
-   $ grunt run:android
+    $ grunt run:ios
+    $ grunt run:android
 
 ### `grunt compress`
 
@@ -77,8 +77,8 @@ This runs `grunt compress` to optimize your Ionic app assets and then immediatel
 
 Build your Ionic application for the targeted platform.
 
-   $ grunt build:ios --device --release
-   $ grunt build:android --debug
+    $ grunt build:ios --device --release
+    $ grunt build:android --debug
 
 ### `grunt jshint`
 
