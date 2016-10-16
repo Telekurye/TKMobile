@@ -5,7 +5,7 @@
     "ionic": "v1.3.1",
     "ngCordova": "v0.1.27-alpha",
     "ngstorage": "^0.3.11",
-    "pouchdb": "^6.0.6",
+    "pouchdb": "~5.4.5",
     "blob-util": "^1.2.1",
     "ionic-material": "^0.4.2",
     "robotodraft": "^1.1.0"

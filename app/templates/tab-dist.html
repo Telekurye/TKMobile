@@ -1,3 +1,6 @@
+<script>
+  alert('is the SQLite plugin available? ' + window.sqlitePlugin);
+</script>
 <ion-view>
   <ion-header-bar align-title="left" class="bar-energized">
     <h2 class="title">Gönderiler</h2>
@@ -11,7 +14,7 @@
     </div>
   </ion-header-bar>
   <ion-content>
-    <ion-list show-reorder="data.showReorder">
+    <ion-list show-reorder="data.showReorder" ng-if="false">
       <ion-item class="item-avatar-left item-icon-right" go-click="/tab/dist/{{chat.id}}"
                 ng-repeat="chat in chats track by $index">
         <img ng-src="{{chat.face}}">
@@ -21,6 +24,16 @@
         <ion-reorder-button class="ion-navicon right-0"
                             on-reorder="moveItem(chat, $fromIndex, $toIndex)">
         </ion-reorder-button>
+      </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-item ng-repeat="item in items"
+                class="item item-icon-right" type="item-text-wrap">
+        <h2>{{ item.WorkOrderDataInfo[0].Description }}</h2>
+        <p>{{ item.WorkOrderDataInfo[item.WorkOrderDataInfo.length-1].Description }}</p>
+
+        <i class="icon ion-chevron-right icon-accessory"></i>
       </ion-item>
     </ion-list>
   </ion-content>

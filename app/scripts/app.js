@@ -1,9 +1,19 @@
-var app = angular.module('TKMobile', ['ionic', 'starter.services', 'ionic-material']);
+var app = angular.module('TKMobile', [
+  'ionic',
+  'starter.services',
+  'ionic-material',
+  'ngCordova',
+  'ngStorage']);
 
 app.run(function($ionicPlatform, ionicMaterialInk, ionicMaterialMotion, $rootScope) {
 
   $ionicPlatform.ready(function() {
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
+
+      //var PouchAdapterCordovaSqlite = require('../pouchdb-adapter-cordova-sqlite');
+      //cordova.sqlite_plugin.use_prefix = true; // use the legacy '_pouch' prefix
+      //PouchDB.plugin(PouchAdapterCordovaSqlite);
+
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
       cordova.plugins.Keyboard.disableScroll(true);
 

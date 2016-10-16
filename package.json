@@ -2,7 +2,9 @@
   "name": "TKMobile",
   "version": "1.0.0",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "pouchdb-adapter-cordova-sqlite": "^1.0.0"
+  },
   "devDependencies": {
     "grunt": "~0.4.5",
     "glob": "~4.3.5",
@@ -53,7 +55,6 @@
     "cordova-plugin-device",
     "cordova-plugin-console",
     "cordova-plugin-whitelist",
-    "cordova-plugin-sqlite",
     "cordova-plugin-camera",
     "cordova-plugin-file",
     "cordova-plugin-file-opener2",
@@ -71,6 +72,13 @@
     "cordova-plugin-device-orientation",
     "cordova-plugin-dialogs",
     "cordova-plugin-battery-status",
-    "https://github.com/driftyco/ionic-plugins-keyboard.git"
+    "https://github.com/driftyco/ionic-plugins-keyboard.git",
+    "cordova-plugin-sqlite@~1.0.3",
+    "cordova-sqlite-storage@~1.4.8",
+    "https://github.com/brodysoft/Cordova-SQLitePlugin",
+    "cordova-plugin-sqlite"
+  ],
+  "cordovaPlatforms": [
+    "android"
   ]
 }
